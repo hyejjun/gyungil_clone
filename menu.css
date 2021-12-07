@@ -1,0 +1,91 @@
+*{/*    *: 전체 엘리먼트      */
+    margin: 0; padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+img{
+    display: block;
+    line-height: 0;
+}
+
+#wrap{
+    width: 100%;
+}
+
+#header{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#header > #logo{
+    float: left;
+    width: 200px;
+}
+
+#header > #gnb{
+    float: left;
+}
+
+
+#header > #gnb > ul > li{
+    float: left;
+}
+
+/* a는 inline --> 넓이 지정이 안됨  --> inline-block으로 변경 */
+#header > #gnb > ul > li > a {
+    width: 180px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;    /*상하 좌우*/
+}
+
+
+#header > .snb_area{
+    clear: both;
+    /*float : left의 영향을 받지 않겠다.*/
+    /*대부분 사이트 footer 부분에 많이 쓰인다.*/
+    height: 1px;
+    background: gray;
+    overflow: hidden;
+}
+
+#header > .snb_area.navi{
+    animation: slider 0.5s;
+    animation-fill-mode: forwards;
+    /*없다가 나와서 멈춤*/
+    /*안쓰면 나왔다가 없어져서 멈춤*/
+}
+
+@keyframes slider{
+    from{
+        height: 1px;
+    }
+    to{
+        height: 150px;
+    }
+}
+
+.snb_area > h2{
+    float: left;
+    width: 200px;
+    /* #logo와 동일하게 width를 200px 줌*/
+}
+
+.snb_area > ul{
+    float: left;
+    width: 180px;
+}
+
+
+.snb_area > ul >li{
+    text-align: center;
+}

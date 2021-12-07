@@ -1,0 +1,644 @@
+*{
+    margin:0;
+    padding:0;
+}
+ 
+ul,li{
+    list-style:none;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+a:hover{
+    text-decoration: underline;
+}
+ 
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ 
+#wrap{
+    width:100%;
+}
+ 
+
+/********/
+#quickMenu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid rgb(217, 217, 217);
+    opacity: 1;
+}
+
+
+
+/*************/
+
+#header{
+    width:1200px;
+    margin:0 auto;
+    height:100px;
+}
+#header2{
+   
+    width:100%;
+    margin:0 auto;
+    height:150px;
+}
+ 
+#logo{
+    float:left;
+    margin:20px 0 0 0;
+    width: 200px;
+}
+ 
+#gnb{
+    float:right;
+    height: 100%;
+    cursor: pointer;
+}
+ 
+#gnb > ul > li{
+    float:left;
+    width:180px;
+    margin:40px 0 0 0;
+}
+ 
+#gnb > ul > li > a{
+    font-size: 19px;
+    font-weight: bold;
+    color:#004385;
+}
+
+#header2{
+    position: absolute;
+    width: 100%;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    background-color:rgba(102, 102, 102,0.9);
+    z-index: 1;
+}
+
+.snb_area{
+    margin: 0 auto;
+    clear: both;
+    height: 150px;
+    overflow: hidden;
+    
+    width: 1200px;
+}
+
+.snb_area > h2{
+    float: left;
+    width: 300px;
+    
+    /* #logo와 동일하게 width를 200px 줌*/
+}
+.snb_area >h2 >img{
+    padding-top: 20px;
+}
+
+.snb_area > ul {
+    float: left;
+    width: 180px;
+    box-sizing: border-box;
+}
+
+.snb_area >ul >li{
+    float:left;
+    width:130px;
+}
+
+.snb_area > ul >li >a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+}
+
+#header2.navi{
+    animation: slider 0.5s;
+    animation-fill-mode: forwards;
+}
+.snb_area>.navi{
+    animation: slider 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider{
+    from{
+        height: 1px;
+    }
+    to{
+        height: 160px;
+    }
+}
+
+/**********************************************/
+.visual{
+    margin:0 auto;
+    width:1920px;
+    height:500px;
+}
+
+
+#banner{
+    position:absolute;
+    top: 102px;
+    /*엡솔루트 가운데 정렬*/
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#banner>ul>li{
+    position: absolute;     
+    top : 0px;
+    display: none;  
+}
+    
+
+#banner>ul>li.fadein3{
+    animation: fadein 3s;       
+}
+
+#banner > ul >li.on{
+    display: block;
+   
+}
+
+
+@keyframes fadein{      
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#bannerBtn{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(102, 102, 102,0.7);;
+    position: absolute;
+    top: 553px;
+    
+}
+
+#bannerBtn>ul{
+    width: 800px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 5px;
+   
+    
+}
+
+#bannerBtn>ul>li{
+    font-size: 20px;
+    height: 10px;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+#bannerBtn>ul>li.bg{
+    background-color: rgba(0,0,0,0.7);
+}
+
+#bannerBtn >ul >li.bg:hover{
+    background-color: none;
+    animation: fadeout 3s;
+}
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+#bannerBtn > ul >li >a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#container{
+    width: 1200px;
+    height: 930px;
+    margin: 550px auto 0 auto;
+   
+}
+ 
+#contents{
+    height: 920px;
+    width: 600px;
+    float: left;
+}
+ 
+.box{
+    width: 300px;
+    height:230px;
+    padding: 20px ;
+    border:1px solid #ececec;
+    box-sizing: border-box;
+    float: left;
+}
+ 
+.box > h2 > span {
+      font-size: 12px;
+      color: #4689e1;
+      display:block;
+ 
+}
+ 
+.box > h2 {
+    font-size: 23px;
+    color: #2d2d2d;
+ 
+}
+ 
+.box > p{
+    font-size: 12px;
+    color: #666;
+    margin: 30px 0 0 0;
+    width: 120px;
+}
+ 
+.a_btn{
+    display: block;
+    font-size:14px;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: #81b4f2;
+    border-radius: 15px;
+    text-align: center;
+    line-height:30px ;
+    margin: 40px 0 0 0;
+ 
+}
+ 
+.box1{
+    background:url("./img/main_con_ic_01.png") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+.box2{
+    background:url("./img/main_con_ic_02.png") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+ 
+.box3{
+    background:url("./img/main_con_ic_04.png") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+.box4{
+    background:url("./img/main_con_ic_05.png") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+.box5{
+    background:url("./img/main_con_ic_06.jpg") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+.box6{
+    background:url("./img/main_con_ic_07.jpg") no-repeat bottom right;
+    background-position: 170px 110px ;
+}
+ 
+.notice > dt{
+    display :inline-block;
+    float: left;
+    width: 120px;
+    height: 30px;
+}
+ 
+.notice > dd {
+       display: inline-block;
+       float: right;
+       font-size: 12px;
+       color: #666;
+      width: 100px;
+      height: 30px;
+      text-align: right;
+}
+ 
+.notice{
+    margin: 20px 0 0 0;
+    line-height: 30px;  
+   
+}
+ 
+.notice > dt > a{
+    font-size: 12px;
+    color: #666;
+}
+
+.notice >dt>a::before{
+    content: "-";
+}
+
+ 
+.box8 > p{
+    margin: 15px 0 0 0;
+}
+ 
+.kakao_btn{
+    margin: 5px auto 0 70px;
+}
+ 
+#con_right{
+    width:600px;
+    height:920px;
+    float: right;
+}
+ 
+#community{
+    width:100%;
+    height:50%;
+    background: pink;
+ 
+}
+ 
+.interview_text{
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+ 
+/*인터뷰*/
+ 
+
+
+.interview_contents{
+    width: 50%;
+    height:460px;
+    padding:20px;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    display:inline-block;
+    float: left;
+
+    position: relative;
+    display: none;
+}
+
+.interview_contents.on_int{
+    display: block;
+}
+
+.interview_contents.slide{
+    animation: slide 3s;
+}
+
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+    
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+.interview_contents > h2{
+    margin-bottom: 20px;
+    display:inline-block;
+    float:left;
+}
+ 
+.interview_contents > a{
+    float:right;
+}
+ 
+.main_review > h2{
+    display:inline-block;
+}
+ 
+.main_review > a{
+    float:right;
+}
+ 
+.interview > a > img{
+    display: block;
+    width: 260px;
+    height:170px;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+}
+ 
+.interview > p{
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+ 
+ 
+/*수강후기*/
+.main_review{
+    width: 50%;
+    height: 460px;
+    padding:20px;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    display:inline-block;
+}
+ 
+.main_review > h2{
+    margin-bottom: 20px;
+}
+ 
+.review{
+    background: #fafafa;
+}
+ 
+.review > ul >li{
+    height: 55px;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ececec;
+    margin: 5px 0 0 0;
+    box-sizing: border-box;
+}
+ 
+.review > ul > li > p{
+    text-align: right;
+}
+ 
+/*포트폴리오*/
+#portfolio{
+    width:600px;
+    height: 460px;
+    padding:20px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    float:right;
+    display:block;
+}
+ 
+#youtube> iframe {
+    display: block;
+    height:380px;
+    width:100%;
+    margin:20px 0 0 0;
+}
+ 
+#news{
+    width:1200px;
+    height: 430px;
+    margin:50px auto 0 auto;
+}
+ 
+.story{
+    width:390px;
+    height: 430px;
+    margin:0 15px 0 0;
+    padding:20px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    float:left;
+}
+ 
+.story > h2 >span{
+    font-size: 12px;
+    color:#4689e1;
+    display:block;
+}
+ 
+.story > h2{
+    font-size: 23px;
+    color: #2d2d2d;
+}
+ 
+.story > a > img{
+    width:100%;
+    height: 180px;
+    display: inline-block;
+    margin:20px auto 5px auto;
+}
+ 
+.story > p > a{
+    font-size: 12px;
+    color: #2d2d2d;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+ 
+.story > ul > li > a{
+    font-size: 12px;
+    color: #2d2d2d;
+    line-height: 40px;
+ 
+}
+ 
+.story > ul{
+    margin:10px 0 0 0;
+}
+ 
+.mainstory{
+    background: url("./images/main_bbs_ic_01.png") no-repeat top right;
+    background-position: 300px 15px;
+    background-color:#fafafa;
+}
+ 
+.information{
+    background: url("./images/main_bbs_ic_02.png") no-repeat top right;
+    background-position: 300px 15px;
+}
+ 
+ 
+.column{
+    background: url("./images/main_bbs_ic_03.png") no-repeat top right;
+    background-position: 300px 15px;
+    margin:0;
+    background-color:#fafafa;
+}
+ 
+/**/
+#footer{
+    width: 100%;
+    height: 250px;
+    background: #2d2d2d;
+    margin: 50px 0 0 0;
+}
+ 
+.footer_text{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ 
+.footer_gnb{
+    float: left;
+}
+ 
+.footer_gnb > ul{
+    width: 1160px;
+    height: 20px;
+}
+ 
+.footer_gnb > ul > li{
+    float: left;
+    width: 120px;
+    height: 20px;
+}
+
+.footer_gnb >ul >li ::after{
+    content: " | ";
+}
+
+.footer_gnb>ul>li>.last_footer_gnb::after{
+    content: " ";
+
+}
+ 
+.footer_gnb > ul > li >a{
+    font-size: 12px;
+    color:#aeaeae;
+    font-weight: bold;
+}
+ 
+#footer_logo{
+    width: 160px;
+    height: 80px;
+    margin: 50px 0 0 20px;
+    float: left;
+}
+ 
+.address{
+    width: 800px;
+    height: 150px;
+    margin: 60px 0 0 200px;
+}
+ 
+.address > p{
+    font-size: 12px;
+    color: #aeaeae;
+    line-height: 30px;
+}
+ 
+.copyright{
+    margin: 20px 0 0 0;
+}
+ 
+

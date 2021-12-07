@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .slide {
+      width: 300px;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .slide ul {
+      width: calc(100% * 4);
+      display: flex;
+      animation: slide 8s infinite;
+    }
+
+    /* slide를 8초동안 진행하며 무한반복 함 */
+    .slide li {
+      width: calc(100% / 4);
+      height: 300px;
+    }
+
+
+    @keyframes slide {
+      0% {
+        margin-left: 0;
+      }
+
+      /* 0 ~ 10  : 정지 */
+      10% {
+        margin-left: 0;
+      }
+
+      /* 10 ~ 25 : 변이 */
+      25% {
+        margin-left: -100%;
+      }
+
+      /* 25 ~ 35 : 정지 */
+      35% {
+        margin-left: -100%;
+      }
+
+      /* 35 ~ 50 : 변이 */
+      50% {
+        margin-left: -200%;
+      }
+
+      60% {
+        margin-left: -200%;
+      }
+
+      75% {
+        margin-left: -300%;
+      }
+
+      85% {
+        margin-left: -300%;
+      }
+
+      100% {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide">
+    <ul>
+      <li class="interview_contents on_int slide">
+        <h2>
+          취업자인터뷰
+        </h2>
+        <a href="###"><img src="./img/btn_more.gif"></a>
+        <div class="interview">
+          <a href="###"><img src="./img/interview.png"></a>
+          <p>
+            퀘*트게임즈 김대혁, 문희진" 정말 발전하고자 하는 열정적인 마음을 가지고 스스로 노력하고자 하는 사람이 왔으면 좋겠습니다.
+            "&nbsp;드루와 던전&nbsp;퀘*트게임즈에 ...
+          </p>
+          <p>
+            퀘*트 게임즈<br>김대혁, 문희진 훈련생
+          </p>
+        </div>
+      </li>
+      <li class="interview_contents slide">
+        <h2>
+          취업자인터뷰
+        </h2>
+        <a href="###"><img src="./img/btn_more.gif"></a>
+        <div class="interview">
+          <a href="###"><img src="./img/interview.png"></a>
+          <p>
+            인터뷰 내용 길게 들어감
+          </p>
+          <p>
+            어느반 누구 입니다
+          </p>
+        </div>
+      </li>
+      <li class="interview_contents slide">
+        <h2>
+          취업자인터뷰
+        </h2>
+        <a href="###"><img src="./img/btn_more.gif"></a>
+        <div class="interview">
+          <a href="###"><img src="./img/interview3.png"></a>
+          <p>
+            인터뷰 내용 길게 들어감
+          </p>
+          <p>
+            어느반 누구 입니다
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

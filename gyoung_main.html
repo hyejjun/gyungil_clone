@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gyoung_main.css">
+</head>
+<body>
+    <div id="wrap">
+
+        <!--퀵 메뉴-->
+        <div id="quickMenu">
+
+            <ul>
+                <li><a href="#"><img src="./img/quick_menu.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img01.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img02.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img03.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img04.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img05.gif"></a></li>
+                <li><a href="#"><img src="./img/quick_img06.gif"></a></li>
+            </ul>
+
+        </div>
+        <!--퀵 메뉴 끝-->
+
+        <div id="header" >
+            <div id="logo">
+                <a href="###"><img src="./img/logo.png"></a>
+            </div>
+            <div id="gnb" onmouseover="mouseIn(); mouseIn2();" onmouseout="mouseOut(); mouseOut2();">
+                <ul >
+                    <li><a href="###">학교소개</a></li>
+                    <li><a href="###">교육과정</a></li>
+                    <li><a href="###">취업정보</a></li>
+                    <li><a href="###">커뮤니티</a></li>
+                    <li><a href="###">상담신청</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="header2" class="sub_area" onmouseover="mouseIn();" onmouseout="mouseOut();" >
+            <div class="snb_area" >
+            <h2><img src="./img/snb_img.png"></h2>
+            <ul>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">교직원소개</a></li>
+                <li><a href="#">시설소개</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">과정안내</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">취업자인터뷰</a></li>
+                <li><a href="#">취업현황</a></li>
+                <li><a href="#">포트폴리오</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">수강후기</a></li>
+                <li><a href="#">KI이야기</a></li>
+                <li><a href="#">KI기자단</a></li>
+                <li><a href="#">교수칼럼</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">상담게시판</a></li>
+                <li><a href="#">지원하기</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+            </ul>
+        </div>
+        </div>
+        
+        
+        <div id="banner" class="visual">
+            <ul class="banner1">
+                <li class="fadein3"><img src="./img/image1.png"></li>
+                <li class="fadein3"><img src="./img/image2.png"></li>
+                <li class="fadein3"><img src="./img/image3.png"></li>
+                <li class="fadein3"><img src="./img/image4.png"></li>
+                <li class="fadein3"><img src="./img/image5.png"></li>
+            </ul>
+        </div>
+
+        <div id="bannerBtn">
+            <ul>
+                <li onclick="bannerBtn(0)"><a href="#">AR/VR특화과정</a></li>
+                <li onclick="bannerBtn(1)"><a href="#">너도 될 수 있어!</a></li>
+                <li onclick="bannerBtn(2)"><a href="#">KDT혁신교육기관</a></li>
+                <li onclick="bannerBtn(3)"><a href="#">취업률 1위</a></li>
+                <li onclick="bannerBtn(4)"><a href="#">3년우수훈련기관</a></li>
+            </ul>
+        </div>
+ 
+ 
+        <div id="container">
+            <div id="contents">
+                <ul class="big_box">
+                    <li class="box box1">
+                        <h2>
+                            <span>Game Architecture</span>
+                            게임 기획
+                        </h2>
+                        <p>
+                            게임기획자를 위한 정석 class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box2">
+                        <h2>
+                            <span>Game Programming</span>
+                            게임 프로그래밍
+                        </h2>
+                        <p>
+                            게임 프로그래밍을 위한 정석 class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box3">
+                        <h2>
+                            <span>Game Artworks</span>
+                            게임 원화
+                        </h2>
+                        <p>
+                            게임 원화를 위한 정석 Class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box4">
+                        <h2>
+                            <span>Progamer Coaching</span>
+                            프로게이머 코칭
+                        </h2>
+                        <p>
+                            프로게이머 데뷔 Class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box5">
+                        <h2>
+                            <span>AR/VR</span>
+                            AR/VR
+                        </h2>
+                        <p>
+                            증강현실/가상현실 Class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box6">
+                        <h2>
+                            <span>Block Chain</span>
+                            블록체인
+                        </h2>
+                        <p>
+                            블록체인 class
+                        </p>
+                        <a href="###" class="a_btn">바로가기</a>
+                    </li>
+                    <li class="box box7">
+                        <h2>
+                            공지사항
+                        </h2>
+                        <dl class="notice">
+                            <dt>
+                                <a href="####">3월 블록체인반 모집 임박</a>
+                            </dt>
+                            <dd>
+                                03-03
+                            </dd>
+ 
+                            <dt>
+                                <a href="####">4월 VR/AR반 모집 안내</a>
+                            </dt>
+                            <dd>
+                                03-03
+                            </dd>
+ 
+                            <dt>
+                                <a href="####">4월 게임 프로그래밍반 모집</a>
+                            </dt>
+                            <dd>
+                                03-03
+                            </dd>
+ 
+                            <dt>
+                                <a href="####">2월 기획반 모집 마감안내!</a>
+                            </dt>
+                            <dd>
+                                03-02
+                            </dd>
+                        </dl>
+                        
+                    </li>
+                    <li class="box box8">
+                        <h2>
+                            상담/문의
+                        </h2>
+                        
+                        <p><img src="./img/customer_tel.png"></p>
+ 
+                        <p><img src="./img/customer_kakao.png"></p>
+ 
+                        <a href="####"> <img src="./img/customer_kakao_btn.png" class="kakao_btn"></a>
+                    </li>
+                </ul>
+            </div>
+ 
+            <div id="con_right">
+                <ul class="interview_text slide_ul">
+                        <li class="interview_contents on_int slide">
+                            <h2>
+                                취업자인터뷰
+                            </h2>
+                            <a href="###"><img src="./img/btn_more.gif"></a>
+                            <div class="interview">
+                                <a href="###"><img src="./img/interview.png"></a>
+                                <p>
+                                    퀘*트게임즈 김대혁, 문희진" 정말 발전하고자 하는 열정적인 마음을 가지고 스스로 노력하고자 하는 사람이 왔으면 좋겠습니다.
+                                    "&nbsp;드루와 던전&nbsp;퀘*트게임즈에 ...
+                                </p>
+                                <p>
+                                    퀘*트 게임즈<br>김대혁, 문희진 훈련생
+                                </p>
+                            </div>
+                        </li>
+                        <li class="interview_contents slide">
+                            <h2>
+                                취업자인터뷰
+                            </h2>
+                            <a href="###"><img src="./img/btn_more.gif"></a>
+                            <div class="interview">
+                                <a href="###"><img src="./img/interview2.png"></a>
+                                <p>
+                                    인터뷰 내용 길게 들어감
+                                </p>
+                                <p>
+                                    어느반 누구 입니다
+                                </p>
+                            </div>
+                        </li>
+                        <li class="interview_contents slide">
+                            <h2>
+                                취업자인터뷰
+                            </h2>
+                            <a href="###"><img src="./img/btn_more.gif"></a>
+                            <div class="interview">
+                                <a href="###"><img src="./img/interview3.png"></a>
+                                <p>
+                                    인터뷰 내용 길게 들어감
+                                </p>
+                                <p>
+                                    어느반 누구 입니다
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main_review fadein">
+                            <h2>
+                                수강후기
+                            </h2>
+                            
+                            <div class="review">
+                                <ul>
+                                    <li>
+                                       <span>슬기로운 경일생활</span>
+                                       <p>[플밍_임재성] 2021-03-13</p>
+                                    </li>
+                                    <li>
+                                        <span>슬기로운 경일생활</span>
+                                        <p>[플밍_임재성] 2021-03-13</p>
+                                     </li>
+                                     <li>
+                                        <span>슬기로운 경일생활</span>
+                                        <p>[플밍_임재성] 2021-03-13</p>
+                                     </li>
+                                     <li>
+                                        <span>슬기로운 경일생활</span>
+                                        <p>[플밍_임재성] 2021-03-13</p>
+                                     </li>
+                                     <li>
+                                        <span>슬기로운 경일생활</span>
+                                        <p>[플밍_임재성] 2021-03-13</p>
+                                     </li>
+                                     <li>
+                                        <span>슬기로운 경일생활</span>
+                                        <p>[플밍_임재성] 2021-03-13</p>
+                                     </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="portfolio">
+                        <h2>
+                            포토폴리오
+                        </h2>
+                        <div id="youtube">
+                            <iframe src="https://www.youtube.com/embed/TzLsPrkRKt4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="news">
+            <ul>
+                <li class="story mainstory">
+                    <h2>
+                        <span>KI story</span>
+                        경일이야기
+                    </h2>
+                    <a href="###"><img src="./img/kga_day.jpg"></a>
+                    <p>
+                        <a href="###">제 2회 경일게임아카데미 ★시네마 데이★</a>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="###">게임 AR/ VR 정규과정</a>
+                        </li>
+                        <li>
+                            <a href="###">게임정규과정</a>
+                        </li>
+                        <li>
+                            <a href="###">게임정규과정</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="story information">
+                    <h2>
+                        <span>useful information</span>
+                        유용정보
+                    </h2>
+                    <a href="###"><img src="./img/ncsoft.jpg"></a>
+                    <p>
+                        <a href="###">NC소프트 신화섭 기획자 인터뷰</a>
+                    </p>
+                    <ul>
+                        <li> <a href="#">- 서드도어 이성재 기획자 인터뷰</a></li>
+                        <li> <a href="#">- 1부) 블록체인? 그거 비트코인 아니야?</a></li>
+                        <li> <a href="#">- 경일인들의 놀이터 각종 꿀팁이 가능한 카페가 있다!</a></li>
+                    </ul>
+                </li>
+                <li class="story column">
+                    <h2>
+                        <span>Column</span>
+                        교수칼럼
+                    </h2>
+                    <a href="###"><img src="./img/debate.png"></a>
+                    <p>
+                        <a href="###">게임프로그래머 취업트렌드를 알려주마</a>
+                    </p>
+                    <ul>
+                        <li> <a href="#">- 왜 블록체인인가? (박재덕 대표)</a></li>
+                        <li> <a href="#">- 멘토링별 학생 유형과 개발자의 자세 (권순우 멘토)</a></li>
+                        <li> <a href="#">- "학생이 미래다" 게임원화 이진호교수님 인터뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div id ="footer">
+            <div class="footer_text">
+                <div class="footer_gnb">
+                    <ul>
+                        <li> <a href="#">학교소개  &nbsp;</a>  </li>
+                        <li> <a href="#">교육과정</a> </li>
+                        <li> <a href="#">공지사항</a> </li>
+                        <li> <a href="#">상담신청</a> </li>
+                        <li > <a href="#" class="last_footer_gnb">개인정보처리방침</a> </li>
+                    </ul>
+                </div>
+                <h1 id ="footer_logo">
+                    <img src="./img/logo_bottom_2018.png">
+                </h1>
+                <div class="address">
+                    <p>서울특별시 강동구 천호대로 995 금복빌딩 3,4층 경일게임아카데미(지하철 5,8호선 1번출구 10m이내)</p>
+                    <p>TEL : 02-479-4050 FAX : 02-479-4056 대표자 : 박병준 개인정보관리책임자 : 서혁준</p>
+                    <p>사업자번호 : 212-81-89247 통신판매허가번호 : 제2020-서울강동-1360호</p>
+                    <p class="copyright">Copyright © 2016. Kyungil Technical College. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+
+
+    <script>
+         var target = document.querySelector('#header2');
+         var target2 = document.querySelector('.sub_area');
+        function mouseIn(){
+            target.setAttribute('class', 'navi');
+        }
+
+        function mouseOut(){
+            target.setAttribute('class', 'snb_area');
+        }
+
+        function mouseIn2(){
+            target2.setAttribute('class', 'snb_area navi');
+        }
+
+        function mouseOut2(){
+            target2.setAttribute('class', 'snb_area');
+        }
+        
+
+        /*********************/
+
+        var index= 0;
+        var rolling = null;
+        banner(0);
+        
+        function banner(n){
+            bannerImg = document.querySelectorAll('.banner1 > li');
+            bannerButtons =document.querySelectorAll('#bannerBtn > ul >li');
+            
+
+            if(index >= bannerImg.length){
+                index = 0;
+            }
+
+            //undefined = 인자값이 정해지지 않았을때
+            if(n != undefined){
+                index = n;
+            }
+
+
+            for(i=0; i<bannerImg.length; i++){
+                if(i == index){
+                    bannerImg.item(i).setAttribute('class', 'fadein3 on');
+                    bannerButtons.item(i).setAttribute('class', 'bg');
+                   
+                }
+                else{
+                    bannerImg.item(i).setAttribute('class', 'fadein3');
+                    bannerButtons.item(i).setAttribute('class', '');
+                }
+            }
+
+            index ++;
+
+        }
+
+        function bannerBtn(n){
+            clearInterval(rolling);
+            banner(n);
+            rolling = setInterval(banner, 5000);
+        }
+
+        rolling = setInterval(banner, 5000);
+
+
+        function interview_slide(){
+            interview =document.querySelectorAll('.interview_contents');
+
+            if(index >= interview.length){
+                index = 0;
+            }
+
+            for(i = 0; i< interview.length; i++){
+                if(i == index){
+                    interview.item(i).setAttribute('class', 'interview_contents slide on_int');
+                }else{
+                    interview.item(i).setAttribute('class', 'interview_contents slide ');
+                }
+            }
+            index ++;
+        }
+
+        setInterval(interview_slide, 5000);
+
+
+    </script>
+</body>
+</html>
+ 
+ 
+

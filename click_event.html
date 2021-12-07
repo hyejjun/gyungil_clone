@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id01{
+            border: 5px solid green;
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        function mover(){
+            var M
+            M = document.querySelector('#id01');
+            M.innerText = "마우스 in"
+        }
+        function mout(){
+            var M
+            M = document.querySelector('#id01');
+            M.innerText = "마우스 out"
+        }
+        function mclick(){
+            var M
+            M = document.querySelector('#id01');
+            M.innerText = "마우스 click중"
+        }
+        function mc(){
+            var M
+            M = document.querySelector('#id01');
+            M.innerText = "마우스 click 완료"
+        }
+        function format(){
+            var M
+            M = document.querySelector('#id01');
+            M.innerText = "마우스 이벤트"
+        }
+    </script>
+</head>
+<body>
+    <h1 id="id01" onmouseover="mover();" onmouseout="mout();" onmousedown="mclick();" onclick="mc();">
+        마우스 이벤트
+    </h1>
+
+    <input type="button" value="초기화" onclick="format();">
+</body>
+</html>
